@@ -13,6 +13,7 @@ namespace QuanLyQuanCafe
     public partial class POS : Form
     {
         private int tabCount;
+        private List<Control> controlList;
 
         public void showChiTietTT(bool value)
         {
@@ -34,6 +35,26 @@ namespace QuanLyQuanCafe
                 showMenu();
             }
         }
+
+        private IEnumerable<Control> GetControlHierarchy(Control root)
+        {
+            var queue = new Queue<Control>();
+
+            queue.Enqueue(root);
+
+            do
+            {
+                var control = queue.Dequeue();
+
+                yield return control;
+
+                foreach (var child in control.Controls.OfType<Control>())
+                    queue.Enqueue(child);
+
+            } while (queue.Count > 0);
+
+        }
+
         public POS()
         {
             InitializeComponent();

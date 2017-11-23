@@ -49,6 +49,7 @@
             this.btnRemoveTab = new System.Windows.Forms.Button();
             this.pnlPOS = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tabControlPOS.SuspendLayout();
             this.pnlThanhToan.SuspendLayout();
@@ -145,7 +146,7 @@
             this.khuVuc1.Location = new System.Drawing.Point(4, 42);
             this.khuVuc1.Name = "khuVuc1";
             this.khuVuc1.Padding = new System.Windows.Forms.Padding(3);
-            this.khuVuc1.Size = new System.Drawing.Size(615, 491);
+            this.khuVuc1.Size = new System.Drawing.Size(644, 491);
             this.khuVuc1.TabIndex = 1;
             this.khuVuc1.Text = "Khu vực 1";
             this.khuVuc1.UseVisualStyleBackColor = true;
@@ -153,11 +154,12 @@
             // tabControlPOS
             // 
             this.tabControlPOS.Controls.Add(this.khuVuc1);
+            this.tabControlPOS.Controls.Add(this.tabPage1);
             this.tabControlPOS.ItemSize = new System.Drawing.Size(72, 38);
             this.tabControlPOS.Location = new System.Drawing.Point(12, 69);
             this.tabControlPOS.Name = "tabControlPOS";
             this.tabControlPOS.SelectedIndex = 0;
-            this.tabControlPOS.Size = new System.Drawing.Size(623, 537);
+            this.tabControlPOS.Size = new System.Drawing.Size(652, 537);
             this.tabControlPOS.TabIndex = 16;
             // 
             // pnlThanhToan
@@ -170,7 +172,7 @@
             this.pnlThanhToan.Controls.Add(this.btnChiTietTT);
             this.pnlThanhToan.Location = new System.Drawing.Point(12, 612);
             this.pnlThanhToan.Name = "pnlThanhToan";
-            this.pnlThanhToan.Size = new System.Drawing.Size(623, 65);
+            this.pnlThanhToan.Size = new System.Drawing.Size(652, 65);
             this.pnlThanhToan.TabIndex = 17;
             // 
             // lblThanhToan
@@ -203,7 +205,7 @@
             this.btnBaoBep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBaoBep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaoBep.ForeColor = System.Drawing.Color.White;
-            this.btnBaoBep.Location = new System.Drawing.Point(479, 0);
+            this.btnBaoBep.Location = new System.Drawing.Point(508, 0);
             this.btnBaoBep.Name = "btnBaoBep";
             this.btnBaoBep.Size = new System.Drawing.Size(72, 65);
             this.btnBaoBep.TabIndex = 18;
@@ -217,7 +219,7 @@
             this.btnChiTietTT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChiTietTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChiTietTT.ForeColor = System.Drawing.Color.White;
-            this.btnChiTietTT.Location = new System.Drawing.Point(551, 0);
+            this.btnChiTietTT.Location = new System.Drawing.Point(580, 0);
             this.btnChiTietTT.Name = "btnChiTietTT";
             this.btnChiTietTT.Size = new System.Drawing.Size(72, 65);
             this.btnChiTietTT.TabIndex = 19;
@@ -232,7 +234,7 @@
             this.btnAddTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddTab.ForeColor = System.Drawing.Color.Black;
-            this.btnAddTab.Location = new System.Drawing.Point(594, 70);
+            this.btnAddTab.Location = new System.Drawing.Point(623, 70);
             this.btnAddTab.Name = "btnAddTab";
             this.btnAddTab.Size = new System.Drawing.Size(36, 36);
             this.btnAddTab.TabIndex = 18;
@@ -247,7 +249,7 @@
             this.btnRemoveTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveTab.ForeColor = System.Drawing.Color.Black;
-            this.btnRemoveTab.Location = new System.Drawing.Point(553, 70);
+            this.btnRemoveTab.Location = new System.Drawing.Point(582, 70);
             this.btnRemoveTab.Name = "btnRemoveTab";
             this.btnRemoveTab.Size = new System.Drawing.Size(36, 36);
             this.btnRemoveTab.TabIndex = 19;
@@ -257,9 +259,9 @@
             // 
             // pnlPOS
             // 
-            this.pnlPOS.Location = new System.Drawing.Point(641, 111);
+            this.pnlPOS.Location = new System.Drawing.Point(670, 111);
             this.pnlPOS.Name = "pnlPOS";
-            this.pnlPOS.Size = new System.Drawing.Size(697, 566);
+            this.pnlPOS.Size = new System.Drawing.Size(668, 566);
             this.pnlPOS.TabIndex = 20;
             // 
             // button6
@@ -276,6 +278,16 @@
             this.button6.TabIndex = 24;
             this.button6.Text = "Tìm kiếm";
             this.button6.UseVisualStyleBackColor = false;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 42);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(615, 491);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Khu vực 2";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // POS
             // 
@@ -327,5 +339,6 @@
         private System.Windows.Forms.Button btnRemoveTab;
         private System.Windows.Forms.Panel pnlPOS;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
