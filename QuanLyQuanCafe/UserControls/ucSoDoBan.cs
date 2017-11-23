@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanCafe.UserControls
 {
+
     public partial class ucSoDoBan : UserControl
     {
         private static ucSoDoBan _instance;
@@ -27,6 +28,16 @@ namespace QuanLyQuanCafe.UserControls
         public ucSoDoBan()
         {
             InitializeComponent();
+        }
+
+        private void btnKV1Ban1_Click(object sender, EventArgs e)
+        {
+            //((POS)(this.ParentForm)).showChiTietTT(true);
+        }
+
+        private void pnlban_DoubleClick(object sender, EventArgs e)
+        {
+            ((POS)(this.ParentForm)).showChiTietTT(true);
         }
     }
 }

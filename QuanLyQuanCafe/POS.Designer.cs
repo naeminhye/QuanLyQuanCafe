@@ -38,7 +38,7 @@
             this.tsMenuQuanLy = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsMenuDangXuat = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.khuVuc1 = new System.Windows.Forms.TabPage();
             this.tabControlPOS = new System.Windows.Forms.TabControl();
             this.pnlThanhToan = new System.Windows.Forms.Panel();
             this.lblThanhToan = new System.Windows.Forms.Label();
@@ -48,9 +48,6 @@
             this.btnAddTab = new System.Windows.Forms.Button();
             this.btnRemoveTab = new System.Windows.Forms.Button();
             this.pnlPOS = new System.Windows.Forms.Panel();
-            this.btnSDB_TD = new System.Windows.Forms.Button();
-            this.btnDangSD = new System.Windows.Forms.Button();
-            this.btnConTrong = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControlPOS.SuspendLayout();
@@ -143,19 +140,19 @@
             this.tsMenuDangXuat.Size = new System.Drawing.Size(208, 24);
             this.tsMenuDangXuat.Text = "Đăng xuất";
             // 
-            // tabPage1
+            // khuVuc1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 42);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(615, 491);
-            this.tabPage1.TabIndex = 1;
-            this.tabPage1.Text = "#1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.khuVuc1.Location = new System.Drawing.Point(4, 42);
+            this.khuVuc1.Name = "khuVuc1";
+            this.khuVuc1.Padding = new System.Windows.Forms.Padding(3);
+            this.khuVuc1.Size = new System.Drawing.Size(615, 491);
+            this.khuVuc1.TabIndex = 1;
+            this.khuVuc1.Text = "Khu vực 1";
+            this.khuVuc1.UseVisualStyleBackColor = true;
             // 
             // tabControlPOS
             // 
-            this.tabControlPOS.Controls.Add(this.tabPage1);
+            this.tabControlPOS.Controls.Add(this.khuVuc1);
             this.tabControlPOS.ItemSize = new System.Drawing.Size(72, 38);
             this.tabControlPOS.Location = new System.Drawing.Point(12, 69);
             this.tabControlPOS.Name = "tabControlPOS";
@@ -265,50 +262,6 @@
             this.pnlPOS.Size = new System.Drawing.Size(697, 566);
             this.pnlPOS.TabIndex = 20;
             // 
-            // btnSDB_TD
-            // 
-            this.btnSDB_TD.BackColor = System.Drawing.Color.White;
-            this.btnSDB_TD.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnSDB_TD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSDB_TD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSDB_TD.ForeColor = System.Drawing.Color.Black;
-            this.btnSDB_TD.Location = new System.Drawing.Point(1219, 69);
-            this.btnSDB_TD.Name = "btnSDB_TD";
-            this.btnSDB_TD.Size = new System.Drawing.Size(119, 36);
-            this.btnSDB_TD.TabIndex = 21;
-            this.btnSDB_TD.Text = "Xem sơ đồ bàn";
-            this.btnSDB_TD.UseVisualStyleBackColor = false;
-            this.btnSDB_TD.Click += new System.EventHandler(this.btnSDB_TD_Click);
-            // 
-            // btnDangSD
-            // 
-            this.btnDangSD.BackColor = System.Drawing.Color.White;
-            this.btnDangSD.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDangSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangSD.ForeColor = System.Drawing.Color.Black;
-            this.btnDangSD.Location = new System.Drawing.Point(641, 69);
-            this.btnDangSD.Name = "btnDangSD";
-            this.btnDangSD.Size = new System.Drawing.Size(120, 36);
-            this.btnDangSD.TabIndex = 22;
-            this.btnDangSD.Text = "Đang sử dụng";
-            this.btnDangSD.UseVisualStyleBackColor = false;
-            // 
-            // btnConTrong
-            // 
-            this.btnConTrong.BackColor = System.Drawing.Color.White;
-            this.btnConTrong.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnConTrong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConTrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConTrong.ForeColor = System.Drawing.Color.Black;
-            this.btnConTrong.Location = new System.Drawing.Point(767, 69);
-            this.btnConTrong.Name = "btnConTrong";
-            this.btnConTrong.Size = new System.Drawing.Size(93, 36);
-            this.btnConTrong.TabIndex = 23;
-            this.btnConTrong.Text = "Còn trống";
-            this.btnConTrong.UseVisualStyleBackColor = false;
-            this.btnConTrong.Click += new System.EventHandler(this.button5_Click);
-            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.DodgerBlue;
@@ -331,9 +284,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1350, 689);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.btnConTrong);
-            this.Controls.Add(this.btnDangSD);
-            this.Controls.Add(this.btnSDB_TD);
             this.Controls.Add(this.pnlPOS);
             this.Controls.Add(this.btnRemoveTab);
             this.Controls.Add(this.btnAddTab);
@@ -366,7 +316,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsMenuDichVu;
         private System.Windows.Forms.ToolStripMenuItem tsMenuThietLap;
         private System.Windows.Forms.ToolStripMenuItem tsMenuQuanLy;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage khuVuc1;
         private System.Windows.Forms.TabControl tabControlPOS;
         private System.Windows.Forms.Panel pnlThanhToan;
         private System.Windows.Forms.Label lblThanhToan;
@@ -376,9 +326,6 @@
         private System.Windows.Forms.Button btnAddTab;
         private System.Windows.Forms.Button btnRemoveTab;
         private System.Windows.Forms.Panel pnlPOS;
-        private System.Windows.Forms.Button btnSDB_TD;
-        private System.Windows.Forms.Button btnDangSD;
-        private System.Windows.Forms.Button btnConTrong;
         private System.Windows.Forms.Button button6;
     }
 }

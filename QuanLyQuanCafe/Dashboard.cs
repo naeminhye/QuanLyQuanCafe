@@ -28,7 +28,7 @@ namespace QuanLyQuanCafe
         private void btnBanHang_Click(object sender, EventArgs e)
         {
             POS mPOS = new POS();
-            mPOS.Show();
+            mPOS.ShowDialog();
         }
 
         private void btnTongQuan_Click(object sender, EventArgs e)

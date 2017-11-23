@@ -112,12 +112,6 @@
     <Compile Include="UserControls\ucLoiNhuan.Designer.cs">
       <DependentUpon>ucLoiNhuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucSoDoBan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ucSoDoBan.Designer.cs">
-      <DependentUpon>ucSoDoBan.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ucDonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +123,12 @@
     </Compile>
     <Compile Include="UserControls\ucNhapKho.Designer.cs">
       <DependentUpon>ucNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSoDoBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSoDoBan.Designer.cs">
+      <DependentUpon>ucSoDoBan.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ucThietLap.cs">
       <SubType>UserControl</SubType>
@@ -193,14 +193,14 @@
     <EmbeddedResource Include="UserControls\ucKhachHang.resx">
       <DependentUpon>ucKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucSoDoBan.resx">
-      <DependentUpon>ucSoDoBan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucDonHang.resx">
       <DependentUpon>ucDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucNhapKho.resx">
       <DependentUpon>ucNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSoDoBan.resx">
+      <DependentUpon>ucSoDoBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucThietLap.resx">
       <DependentUpon>ucThietLap.cs</DependentUpon>

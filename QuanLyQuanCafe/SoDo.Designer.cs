@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.gbxBanPhong = new System.Windows.Forms.GroupBox();
-            this.rbtnBan = new System.Windows.Forms.RadioButton();
             this.rbtnPhong = new System.Windows.Forms.RadioButton();
+            this.rbtnBan = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnBanHang = new System.Windows.Forms.Button();
@@ -55,6 +55,16 @@
             this.gbxBanPhong.TabStop = false;
             this.gbxBanPhong.Text = "Bàn/Phòng";
             // 
+            // rbtnPhong
+            // 
+            this.rbtnPhong.AutoSize = true;
+            this.rbtnPhong.Location = new System.Drawing.Point(19, 45);
+            this.rbtnPhong.Name = "rbtnPhong";
+            this.rbtnPhong.Size = new System.Drawing.Size(67, 21);
+            this.rbtnPhong.TabIndex = 1;
+            this.rbtnPhong.Text = "Phòng";
+            this.rbtnPhong.UseVisualStyleBackColor = true;
+            // 
             // rbtnBan
             // 
             this.rbtnBan.AutoSize = true;
@@ -66,16 +76,6 @@
             this.rbtnBan.TabStop = true;
             this.rbtnBan.Text = "Bàn";
             this.rbtnBan.UseVisualStyleBackColor = true;
-            // 
-            // rbtnPhong
-            // 
-            this.rbtnPhong.AutoSize = true;
-            this.rbtnPhong.Location = new System.Drawing.Point(19, 45);
-            this.rbtnPhong.Name = "rbtnPhong";
-            this.rbtnPhong.Size = new System.Drawing.Size(67, 21);
-            this.rbtnPhong.TabIndex = 1;
-            this.rbtnPhong.Text = "Phòng";
-            this.rbtnPhong.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -165,7 +165,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(476, 342);
+            this.ClientSize = new System.Drawing.Size(476, 353);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);

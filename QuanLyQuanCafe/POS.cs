@@ -12,7 +12,6 @@ namespace QuanLyQuanCafe
 {
     public partial class POS : Form
     {
-        private bool menuShowing;
         private int tabCount;
 
         public void showChiTietTT(bool value)
@@ -20,9 +19,6 @@ namespace QuanLyQuanCafe
             if (value)
             {
                 pnlThanhToan.Visible = false;
-                btnSDB_TD.Visible = false;
-                btnDangSD.Visible = false;
-                btnConTrong.Visible = false;
                 UserControl usercontrol = UserControls.ucCTThanhToan.Instance;
                 if (!pnlPOS.Controls.Contains(usercontrol))
                 {
@@ -35,15 +31,7 @@ namespace QuanLyQuanCafe
             else
             {
                 pnlThanhToan.Visible = true;
-                btnSDB_TD.Visible = true;
-                if (menuShowing)
-                {
-                    showMenu();
-                }
-                else
-                {
-                    showSoDoBan();
-                }
+                showMenu();
             }
         }
         public POS()
@@ -52,11 +40,19 @@ namespace QuanLyQuanCafe
             showMenu();
             showChiTietTT(false);
             tabCount = tabControlPOS.TabCount;
+
+            UserControl usercontrol = UserControls.ucSoDoBan.Instance;
+            if (!khuVuc1.Controls.Contains(usercontrol))
+            {
+                khuVuc1.Controls.Add(usercontrol);
+                usercontrol.Dock = DockStyle.Fill;
+                usercontrol.BringToFront();
+            }
+            else usercontrol.BringToFront();
         }
 
         public void showMenu()
         {
-            btnSDB_TD.Text = "Xem sơ đồ bàn";
             UserControl usercontrol = UserControls.ucThucDon.Instance;
             if (!pnlPOS.Controls.Contains(usercontrol))
             {
@@ -65,23 +61,6 @@ namespace QuanLyQuanCafe
                 usercontrol.BringToFront();
             }
             else usercontrol.BringToFront();
-            btnDangSD.Visible = false;
-            btnConTrong.Visible = false;
-        }
-
-        public void showSoDoBan()
-        {
-            btnSDB_TD.Text = "Xem thực đơn";
-            UserControl usercontrol = UserControls.ucSoDoBan.Instance;
-            if (!pnlPOS.Controls.Contains(usercontrol))
-            {
-                pnlPOS.Controls.Add(usercontrol);
-                usercontrol.Dock = DockStyle.Fill;
-                usercontrol.BringToFront();
-            }
-            else usercontrol.BringToFront();
-            btnDangSD.Visible = true;
-            btnConTrong.Visible = true;
         }
 
         private void tsMenuSoDo_Click(object sender, EventArgs e)
@@ -95,20 +74,6 @@ namespace QuanLyQuanCafe
 
         }
 
-        private void btnSDB_TD_Click(object sender, EventArgs e)
-        {
-            if (menuShowing)
-            {
-                menuShowing = false;
-                showSoDoBan();
-            }
-            else
-            {
-                menuShowing = true;
-                showMenu();
-            }
-        }
-
         private void POS_Load(object sender, EventArgs e)
         {
         }
@@ -120,7 +85,7 @@ namespace QuanLyQuanCafe
 
         private void btnAddTab_Click(object sender, EventArgs e)
         {
-            string title = "#" + (tabCount + 1).ToString();
+            string title = "Khu vực " + (tabCount + 1).ToString();
             TabPage myTabPage = new TabPage(title);
             tabControlPOS.TabPages.Add(myTabPage);
             tabCount = tabCount + 1;
